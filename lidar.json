@@ -1,0 +1,27 @@
+{
+    "intensity_threshold": 160,
+    "node_settings": {
+        "livox_ros_driver2_topic": "/livox/lidar",
+        "point_cloud_filter_topic": "/filtered_pointcloud",
+        "frame_id": "livox_frame"
+    },
+    "dbscan_parameters": {
+        "eps": 0.05,
+        "min_points": 5,
+        "max_points": 100
+    },
+    "ring_parameters": {
+        "target_diameter": 0.120
+    },
+    "kalman_filter": {
+        "enabled": true,
+        "process_noise": 0.1,
+        "measurement_noise": 0.1,
+        "prediction_enabled": true
+    },
+    "tracking_parameters": {
+        "tracking_threshold": 0.2,
+        "max_consecutive_misses": 3,
+        "min_detections_for_stable": 3
+    }
+}
